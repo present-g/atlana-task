@@ -3,13 +3,13 @@ import style from './UserProfileRepo.module.scss';
 import {useHistory} from 'react-router-dom';
 
 import {Input} from '../../../Input';
+import {Block} from "../../../Block";
 
 import {ROUTE} from '../../../../screen/config';
 import {GITHUB_API_TOKEN} from '../../../../api';
 import {UserRepo, UsersDetailType} from '../../types';
 import {getData, setToken} from '../../../../helpers';
 import {useToken} from '../../../../hooks/useToken';
-import {Block} from "../../../Block";
 
 type Props = {
   state: UsersDetailType,
@@ -32,6 +32,7 @@ const UserProfileRepo: React.FC<Props> = ({state}) => {
       .then((response) => {
         setRepo(response);
         setRepoView(response);
+        console.log(response[0])
       })
       .catch((err) => {
         console.error('Users', err);
@@ -61,6 +62,10 @@ const UserProfileRepo: React.FC<Props> = ({state}) => {
     setRepoView(filterRepo);
   }
 
+  const goToGithubRepo = (url: string) => {
+    window.open(url, '_blank');
+  }
+
   return (
     <div className={style.UserProfileRepo}>
       <Block>
@@ -72,7 +77,7 @@ const UserProfileRepo: React.FC<Props> = ({state}) => {
       </Block>
       {repoView.map(item => (
         <Block key={item.id}>
-          <div className={style.repo}>
+          <div className={style.repo} onClick={() => goToGithubRepo(item.html_url)}>
             <span className={style.name}>{item.name}</span>
             <div className={style.wrap}>
               <p className={style.fork}>Forks: {item.forks}</p>
