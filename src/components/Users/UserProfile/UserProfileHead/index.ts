@@ -1,0 +1,1 @@
+export { UserProfileHead } from './UserProfileHead';
