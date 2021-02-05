@@ -1,19 +1,18 @@
-# Застосунок Пошуку Користувачів На ГітХаб
+# User Search Application On GitHub
 
-## Зверніть увагу:
+## Pay attention:
 
-Для нормальної роботи вимагає токен вавторизації, читайте більше [тут](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
+Requires authorization token for normal operation, read more [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
-## Що може застосунок?
+## What can the application do?
 
-### Шукати користувачів GitHub:
+### Find GitHub Users:
 
-Після авторизації Ви маєте можливість здійснювати пошук користувачів GitHub.
+After authorization, you have the opportunity to search for GitHub users.
 
-### Шукати в публічних репозиторіях користувачів:
+### Search in public user repositories:
 
-Для отримання детальної інформації про користувача перейдіть на його профіль.
-Тут буде доступний список репозиторіїв і можливість шукати по них.
+For detailed information about the user, go to his profile.
+A list of repositories and the ability to search for them will be available here.
 
-## Гарного дня;)
-
+## Have a nice day;)
