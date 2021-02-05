@@ -32,7 +32,6 @@ const UserProfileRepo: React.FC<Props> = ({state}) => {
       .then((response) => {
         setRepo(response);
         setRepoView(response);
-        console.log(response[0])
       })
       .catch((err) => {
         console.error('Users', err);
