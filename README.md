@@ -15,4 +15,8 @@ After authorization, you have the opportunity to search for GitHub users.
 For detailed information about the user, go to his profile.
 A list of repositories and the ability to search for them will be available here.
 
+### Demo:
+
+[Search GitHub Users](https://present-g-search-github-users.herokuapp.com/)
+
 ## Have a nice day;)
